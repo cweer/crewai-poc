@@ -1,0 +1,32 @@
+answer_question_task:
+  description: |
+    Answer the following question comprehensively and accurately: {question}
+    
+    Requirements:
+    - Provide a detailed, well-structured answer
+    - Include relevant context and examples where appropriate
+    - Ensure accuracy and completeness
+    - Structure the response clearly with proper formatting
+  expected_output: |
+    A comprehensive answer that addresses the question thoroughly,
+    is well-structured, and provides valuable insights.
+
+evaluate_answer_task:
+  description: |
+    Evaluate the quality of this answer to the question: "{question}"
+    
+    Answer to evaluate: {answer}
+    
+    Evaluation criteria:
+    - Accuracy: Is the information correct?
+    - Completeness: Does it fully address the question?
+    - Clarity: Is it well-structured and easy to understand?
+    - Usefulness: Does it provide valuable insights?
+    
+    Provide a score from 1-10 and detailed feedback.
+  expected_output: |
+    A detailed evaluation containing:
+    - Overall quality score (1-10)
+    - Assessment of accuracy, completeness, clarity, and usefulness
+    - Specific feedback and suggestions for improvement
+    - Summary of strengths and weaknesses
