@@ -11,11 +11,8 @@ class QACrew:
     def __init__(self):
         self.agents_config = self._load_config('config/agents.yaml')
         self.tasks_config = self._load_config('config/tasks.yaml')
-        # Configure LLM with Anthropic
-        self.llm = LLM(
-            model="anthropic/claude-3-sonnet-20240229",
-            api_key=os.getenv('ANTHROPIC_API_KEY')
-        )
+        # Configure LLM with Anthropic using the current model
+        self.llm = "claude-3-5-sonnet-20241022"
         
     def _load_config(self, config_path):
         """Load configuration from YAML file"""
